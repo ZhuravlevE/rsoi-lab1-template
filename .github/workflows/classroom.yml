@@ -29,7 +29,7 @@ jobs:
       #  run: dotnet publish src/lab1/WebApplication3.csproj -c Release -o PersonsPublish --no-restore
       
       - name: Test
-        run:  dotnet test src/TestProject/TestProject.csproj --no-restore --verbosity normal
+        run:  dotnet test src/TestProject/TestProject.csproj
       
       - name: Upload dotnet test results
         uses: actions/upload-artifact@v3
